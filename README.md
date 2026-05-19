@@ -1,111 +1,55 @@
-# Shree Siddhivinayak Jewellery
+# KARAD ONE WAY CAB TAXI RENTALS
 
-Premium enquiry-based jewellery catalogue for **Shree Siddhivinayak Jewellery**, a jewellery wholesaler in Karad.
+Modern full-stack website for a Karad-based one way cab and taxi rental service.
 
 ## Features
 
-- Next.js App Router + Tailwind CSS
-- Luxury mobile-first home page with WhatsApp, call, and design CTAs
-- Searchable product gallery with category filters
-- Product cards with WhatsApp enquiry links
-- Admin login and protected dashboard
-- Upload, edit, and delete jewellery posts
-- Supabase Auth, Database, and Storage integration
-- Local demo fallback when Supabase env vars are not configured
-- Contact section with Google Maps embed, Instagram, WhatsApp, and call actions
+- React + Tailwind CSS responsive frontend
+- Express API backend
+- File-based JSON booking/enquiry database
+- Booking and fare enquiry forms
+- WhatsApp and call CTA integration for `+91 80809 59955`
+- Admin login and dashboard
+- Booking statuses: New, Contacted, Confirmed, Cancelled
+- SEO metadata, local business schema, route-focused content
+- Mobile floating call and WhatsApp buttons
 
-## Local Development
+## Local Setup
 
 ```bash
-npm install
+npm run install:all
+cp server/.env.example server/.env
 npm run dev
 ```
 
-Open `http://localhost:3000`.
+Frontend: `http://localhost:5173`
+Backend API: `http://localhost:5000`
 
-## Demo Admin
+## Default Admin Login
 
-When Supabase is not configured, the dashboard uses local browser storage.
+Set these in `server/.env` before production use:
 
-```text
-Email: owner@shreesiddhivinayakjewellery.com
-Password: admin12345
+```env
+ADMIN_EMAIL=admin@karadcab.com
+ADMIN_PASSWORD=ChangeThisStrongPassword
+JWT_SECRET=replace-with-a-long-random-secret
 ```
 
-## Supabase Setup
+The first server start creates the admin user if it does not exist.
 
-Create a Supabase project, enable email/password auth, create one admin user, then add the env vars from `.env.example`.
-
-Run this SQL in Supabase:
-
-```sql
-create table if not exists public.products (
-  id uuid primary key default gen_random_uuid(),
-  title text not null,
-  category text not null,
-  description text not null,
-  image_url text not null,
-  image_path text,
-  created_at timestamptz not null default now()
-);
-
-alter table public.products enable row level security;
-
-create policy "Public can read products"
-on public.products for select
-using (true);
-
-create policy "Authenticated admins can insert products"
-on public.products for insert
-to authenticated
-with check (true);
-
-create policy "Authenticated admins can update products"
-on public.products for update
-to authenticated
-using (true)
-with check (true);
-
-create policy "Authenticated admins can delete products"
-on public.products for delete
-to authenticated
-using (true);
-```
-
-Create a public storage bucket named `jewellery-products`, then add storage policies:
-
-```sql
-create policy "Public can read jewellery images"
-on storage.objects for select
-using (bucket_id = 'jewellery-products');
-
-create policy "Authenticated admins can upload jewellery images"
-on storage.objects for insert
-to authenticated
-with check (bucket_id = 'jewellery-products');
-
-create policy "Authenticated admins can update jewellery images"
-on storage.objects for update
-to authenticated
-using (bucket_id = 'jewellery-products')
-with check (bucket_id = 'jewellery-products');
-
-create policy "Authenticated admins can delete jewellery images"
-on storage.objects for delete
-to authenticated
-using (bucket_id = 'jewellery-products');
-```
-
-## Production
+## Production Build
 
 ```bash
+npm run install:all
 npm run build
 npm start
 ```
 
-Set these environment variables on your host:
+The Express server serves the built frontend from `client/dist`.
 
-- `NEXT_PUBLIC_SUPABASE_URL`
-- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-- `NEXT_PUBLIC_SUPABASE_PRODUCTS_TABLE`
-- `NEXT_PUBLIC_SUPABASE_PRODUCTS_BUCKET`
+## Deployment Notes
+
+1. Deploy to a Node.js host such as Render, Railway, VPS, or cPanel Node app.
+2. Set environment variables from `server/.env.example`.
+3. Use persistent disk storage for `server/data/karad-cab.json`.
+4. Point the domain DNS to your host after client approval.

@@ -2,6 +2,7 @@ node_modules/
 dist/
 .next/
 out/
+_backup_shree_siddhivinayak/
 .env
 .env.local
 .env*.local
