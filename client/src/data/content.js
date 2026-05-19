@@ -13,9 +13,9 @@ import {
   Users
 } from 'lucide-react';
 
-export const phone = '+918080959955';
-export const displayPhone = '+91 80809 59955';
-export const whatsappUrl = 'https://wa.me/918080959955';
+export const phone = '+919270759955';
+export const displayPhone = '+91 92707 59955';
+export const whatsappUrl = 'https://wa.me/919270759955';
 
 export const navItems = [
   ['Home', '/'],

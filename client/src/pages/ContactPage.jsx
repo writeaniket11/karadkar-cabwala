@@ -8,7 +8,7 @@ import { displayPhone, phone, whatsappUrl } from '../data/content.js';
 export default function ContactPage() {
   return (
     <>
-      <Seo title="Contact Karad Cab Service | Call +91 80809 59955" description="Contact KARAD ONE WAY CAB TAXI RENTALS for one way cab, local taxi, airport taxi and outstation cab from Karad." />
+      <Seo title="Contact Karad Cab Service | Call +91 92707 59955" description="Contact KARAD ONE WAY CAB TAXI RENTALS for one way cab, local taxi, airport taxi and outstation cab from Karad." />
       <PageHero title="Call or WhatsApp for fast cab booking" eyebrow="Contact">
         24/7 cab service from Karad across Maharashtra.
       </PageHero>
