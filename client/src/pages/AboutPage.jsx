@@ -6,16 +6,16 @@ import { whyChoose } from '../data/content.js';
 export default function AboutPage() {
   return (
     <>
-      <Seo title="About KARAD ONE WAY CAB TAXI RENTALS" description="Reliable and affordable taxi rental business in Karad providing cab service across Maharashtra since 2018." />
-      <PageHero title="Reliable cab service in Karad since 2018" eyebrow="About">
-        We provide clean vehicles, polite drivers, safe travel, affordable pricing and 24/7 availability for locals and tourists.
+      <Seo title="About Karadkar Cabwala | Maharashtra Cab Service" description="Karad-based cab team providing reliable pickup across Maharashtra, Goa connections and pilgrimage tours across India since 2018." />
+      <PageHero title="Trusted Maharashtra cab service since 2018" eyebrow="About">
+        Clean vehicles, polite drivers, fair pricing and 24/7 booking support for families, tourists and business travelers.
       </PageHero>
       <section className="section bg-white">
         <div className="container-page grid gap-8 lg:grid-cols-2 lg:items-center">
           <div>
             <h2 className="text-3xl font-black text-navy">Affordable travel with local trust</h2>
             <p className="mt-4 leading-7 text-slate-600">
-              KARAD ONE WAY CAB TAXI RENTALS serves Karad, Satara, Sangli, Kolhapur, Pune, Mumbai, Ratnagiri, Chiplun and all over Maharashtra. Book by call, WhatsApp, or online form.
+              Based in Karad, KARAD ONE WAY CAB TAXI RENTALS coordinates pickups from Pune, Mumbai, Karad, Satara, Sangli and locations across Maharashtra. We also provide Goa connections and custom pilgrimage tours across India. Book by call, WhatsApp or the online form.
             </p>
           </div>
           <div className="grid gap-3 sm:grid-cols-2">

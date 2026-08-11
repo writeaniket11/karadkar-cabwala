@@ -11,7 +11,7 @@ const bookingSchema = z.object({
   dropLocation: z.string().min(2).max(120),
   date: z.string().optional().default(''),
   time: z.string().optional().default(''),
-  tripType: z.enum(['One Way', 'Round Trip', 'Local', 'Airport', 'Emergency']),
+  tripType: z.enum(['One Way', 'Round Trip', 'Local', 'Airport', 'Emergency', 'Pilgrimage Tour']),
   message: z.string().max(500).optional().default('')
 });
 

@@ -9,7 +9,7 @@ export default function Footer() {
         <div>
           <BrandLogo invert variant="mark" />
           <p className="mt-3 max-w-xl text-sm leading-6 text-white/70">
-            Affordable one way cab, local taxi, airport taxi, and outstation cab service from Karad to all over Maharashtra since 2018.
+            One-way, local, airport and outstation cab pickup across Maharashtra, Goa connections and pilgrimage tours across India since 2018.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             <a className="btn-primary" href={`tel:${phone}`}>Call {displayPhone}</a>
@@ -27,8 +27,9 @@ export default function Footer() {
         <div>
           <h3 className="font-bold">Service Areas</h3>
           <p className="mt-3 text-sm leading-6 text-white/70">
-            Karad, Satara, Sangli, Kolhapur, Pune, Mumbai, Ratnagiri, Chiplun and all over Maharashtra.
+            Pune, Mumbai, Karad, Satara, Sangli, Kolhapur and locations across Maharashtra, with Goa connections.
           </p>
+          <Link className="mt-3 inline-block text-sm font-bold text-taxi" to="/services#pilgrimage">Pilgrimage tours across India</Link>
         </div>
       </div>
       <div className="container-page mt-8 border-t border-white/10 pt-5 text-xs text-white/50">

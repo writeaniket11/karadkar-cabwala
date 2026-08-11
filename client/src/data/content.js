@@ -5,6 +5,7 @@ import {
   CarTaxiFront,
   Clock3,
   HeartHandshake,
+  Landmark,
   MapPin,
   Plane,
   Route,
@@ -20,29 +21,54 @@ export const whatsappUrl = 'https://wa.me/919270759955';
 export const navItems = [
   ['Home', '/'],
   ['Services', '/services'],
-  ['Routes', '/routes'],
+  ['Service Areas', '/routes'],
   ['About', '/about'],
   ['Contact', '/contact'],
   ['Booking', '/booking']
 ];
 
 export const services = [
-  { title: 'One Way Trips', text: 'Pay for what you need from Karad to major Maharashtra cities.', icon: Route },
-  { title: 'Outstation Cab', text: 'Comfortable long-distance travel with polite local drivers.', icon: CarTaxiFront },
-  { title: 'Airport Pickup', text: 'Pune and Mumbai airport pickup and drop with timely service.', icon: Plane },
-  { title: 'Emergency Travel', text: 'Quick cab support for urgent travel, day or night.', icon: CalendarClock },
+  { title: 'One Way Cabs', text: 'Book one-way pickup from Pune, Mumbai, Karad, Satara, Sangli and across Maharashtra.', icon: Route },
+  { title: 'Outstation Cab', text: 'Comfortable intercity travel across Maharashtra with Goa pickup and drop connections.', icon: CarTaxiFront },
+  { title: 'Airport Transfers', text: 'Timely pickup and drop for Pune, Mumbai and Goa airports.', icon: Plane },
+  { title: 'Local & Emergency Travel', text: 'Quick cab support for local or urgent travel, day or night.', icon: CalendarClock },
   { title: 'Corporate Travel', text: 'Reliable cabs for office visits, guests, and business trips.', icon: BriefcaseBusiness },
-  { title: 'Holiday Tours', text: 'Family-friendly cars for trips across Maharashtra.', icon: Sparkles }
+  { title: 'Pilgrimage Tours', text: 'Custom family pilgrimage cab tours to holy destinations across India.', icon: Landmark }
 ];
 
 export const routes = [
+  'Pune to Mumbai',
+  'Mumbai to Pune',
+  'Pune to Goa',
+  'Mumbai to Goa',
   'Karad to Pune',
   'Karad to Mumbai',
-  'Karad to Kolhapur',
-  'Karad to Sangli',
-  'Karad to Satara',
-  'Karad to Ratnagiri',
-  'Karad to Chiplun'
+  'Karad to Goa',
+  'Satara to Pune',
+  'Satara to Mumbai',
+  'Sangli to Pune',
+  'Sangli to Mumbai',
+  'Sangli to Goa'
+];
+
+export const serviceAreas = [
+  { city: 'Pune', text: 'Local pickup, Pune Airport transfers and outstation cabs to Mumbai, Goa and cities across Maharashtra.' },
+  { city: 'Mumbai', text: 'Mumbai city and airport pickup for Pune, Goa, Satara, Karad, Sangli and long-distance travel.' },
+  { city: 'Karad', text: 'Local, one-way and round-trip cabs from our Karad base to destinations across Maharashtra and beyond.' },
+  { city: 'Satara', text: 'Doorstep cab pickup for Pune, Mumbai, Karad, Goa, airport transfers and family journeys.' },
+  { city: 'Sangli', text: 'One-way, round-trip and outstation cabs for Pune, Mumbai, Goa and Maharashtra routes.' },
+  { city: 'Goa', text: 'Pre-booked Maharashtra-Goa transfers, airport pickup and return trips for families and groups.' }
+];
+
+export const pilgrimageDestinations = [
+  'Shirdi & Trimbakeshwar',
+  'Pandharpur & Tuljapur',
+  'Kolhapur & Akkalkot',
+  'Tirupati & Srisailam',
+  'Ayodhya & Varanasi',
+  'Ujjain & Omkareshwar',
+  'Dwarka & Somnath',
+  'Rameswaram & Madurai'
 ];
 
 export const whyChoose = [
@@ -71,8 +97,4 @@ export const testimonials = [
   }
 ];
 
-export const languages = {
-  en: 'Affordable One Way Cab Service from Karad',
-  mr: 'Karad hun affordable one way cab seva',
-  hi: 'Karad se affordable one way cab seva'
-};
+export const coverageLine = 'Pickup available from Pune, Mumbai, Karad, Satara, Sangli and locations across Maharashtra.';

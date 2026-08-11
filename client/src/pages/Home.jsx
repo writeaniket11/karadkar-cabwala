@@ -6,21 +6,21 @@ import FareForm from '../components/FareForm.jsx';
 import MapSection from '../components/MapSection.jsx';
 import Seo from '../components/Seo.jsx';
 import ServiceCards from '../components/ServiceCards.jsx';
-import { displayPhone, languages, phone, routes, testimonials, whatsappUrl, whyChoose } from '../data/content.js';
+import { coverageLine, displayPhone, phone, pilgrimageDestinations, routes, testimonials, whatsappUrl, whyChoose } from '../data/content.js';
 
 export default function Home() {
   return (
     <>
       <Seo
-        title="Affordable One Way Cab Service from Karad | KARAD ONE WAY CAB TAXI RENTALS"
-        description="Book affordable one way cab in Karad for Pune, Mumbai, Kolhapur, Sangli, Satara, Ratnagiri, Chiplun and all over Maharashtra."
+        title="Cab Service Across Maharashtra & Goa | Karadkar Cabwala"
+        description="Book reliable local, airport and outstation cabs from Pune, Mumbai, Karad, Satara, Sangli and across Maharashtra, with Goa travel and pilgrimage tours across India."
       />
       <section className="section overflow-hidden bg-white">
         <div className="container-page grid gap-10 lg:grid-cols-[1fr_0.9fr] lg:items-center">
           <div className="reveal">
             <p className="inline-flex rounded-md bg-taxi/20 px-3 py-2 text-sm font-black text-navy">Since 2018 | 24/7 Cab Service</p>
-            <h1 className="mt-5 text-4xl font-black leading-tight text-navy sm:text-6xl">Affordable One Way Cab Service from Karad</h1>
-            <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">Clean cars. Polite drivers. 24/7 cab service across Maharashtra.</p>
+            <h1 className="mt-5 text-4xl font-black leading-tight text-navy sm:text-6xl">Reliable Cab Service Across Maharashtra & Goa</h1>
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">Book clean cars and polite drivers for one-way, round-trip, airport and outstation travel, with pilgrimage tours across India.</p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <a className="btn-primary" href={`tel:${phone}`}><Phone size={18} /> Call Now</a>
               <a className="btn-secondary" href={whatsappUrl} target="_blank" rel="noreferrer"><MessageCircle size={18} /> Book on WhatsApp</a>
@@ -28,16 +28,16 @@ export default function Home() {
             <div className="mt-7 grid gap-3 text-sm font-semibold text-slate-700 sm:grid-cols-3">
               <span className="flex items-center gap-2"><CheckCircle2 className="text-flame" size={18} /> One way trips</span>
               <span className="flex items-center gap-2"><CheckCircle2 className="text-flame" size={18} /> Airport taxi</span>
-              <span className="flex items-center gap-2"><CheckCircle2 className="text-flame" size={18} /> Local cab</span>
+              <span className="flex items-center gap-2"><CheckCircle2 className="text-flame" size={18} /> Pilgrimage tours</span>
             </div>
-            <p className="mt-5 text-sm text-slate-500">{languages.en} | {languages.mr} | {languages.hi}</p>
+            <p className="mt-5 text-sm text-slate-500">{coverageLine}</p>
           </div>
 
           <div className="relative rounded-lg bg-mist p-5 shadow-soft">
             <div className="rounded-lg bg-white p-6">
               <div className="flex items-center justify-between gap-4">
                 <div>
-                  <p className="text-sm font-black uppercase text-flame">Karad Taxi</p>
+                  <p className="text-sm font-black uppercase text-flame">Maharashtra Cab</p>
                   <h2 className="mt-2 text-2xl font-black text-navy">Fast booking, fair price</h2>
                 </div>
                 <div className="hidden sm:block">
@@ -89,7 +89,7 @@ export default function Home() {
         <div className="container-page grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div>
             <p className="text-sm font-black uppercase text-flame">Popular Routes</p>
-            <h2 className="mt-2 text-3xl font-black text-navy">Karad cab routes people book daily</h2>
+            <h2 className="mt-2 text-3xl font-black text-navy">Popular intercity cab routes</h2>
             <p className="mt-3 text-slate-600">Ask fare on call or WhatsApp. One way and round trip options are available.</p>
             <Link className="btn-primary mt-6" to="/routes">View Routes</Link>
           </div>
@@ -98,6 +98,24 @@ export default function Home() {
               <a key={route} className="rounded-md border border-slate-100 bg-mist px-4 py-4 text-sm font-black text-navy transition hover:border-taxi hover:bg-taxi/10" href={whatsappUrl} target="_blank" rel="noreferrer">
                 {route}
               </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-mist">
+        <div className="container-page grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
+          <div>
+            <p className="text-sm font-black uppercase text-flame">Pilgrimage Tours</p>
+            <h2 className="mt-2 text-3xl font-black text-navy">Pilgrimage cab tours across India</h2>
+            <p className="mt-3 leading-7 text-slate-600">Plan a comfortable family journey with flexible pickup, multi-day travel and a custom itinerary for sacred destinations across India.</p>
+            <Link className="btn-primary mt-6" to="/services#pilgrimage">Explore Pilgrimage Tours</Link>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {pilgrimageDestinations.map((destination) => (
+              <div key={destination} className="rounded-md border border-slate-100 bg-white px-4 py-4 text-sm font-black text-navy shadow-sm">
+                {destination}
+              </div>
             ))}
           </div>
         </div>

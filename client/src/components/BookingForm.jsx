@@ -53,6 +53,7 @@ export default function BookingForm({ compact = false }) {
           <option>Local</option>
           <option>Airport</option>
           <option>Emergency</option>
+          <option>Pilgrimage Tour</option>
         </select>
       </div>
       {!compact && (
