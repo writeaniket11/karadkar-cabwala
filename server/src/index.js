@@ -25,7 +25,7 @@ app.use(morgan('tiny'));
 app.use('/api', rateLimit({ windowMs: 60 * 1000, limit: 80 }));
 
 app.get('/api/health', (req, res) => {
-  res.json({ ok: true, service: 'karad-cab-api' });
+  res.json({ ok: true, service: 'harsh-tours-api' });
 });
 
 app.use('/api', publicRoutes);
@@ -37,5 +37,5 @@ app.get('*', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Karad cab server running on port ${port}`);
+  console.log(`Harsh Tours server running on port ${port}`);
 });

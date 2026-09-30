@@ -3,6 +3,20 @@ dist/
 .next/
 out/
 _backup_shree_siddhivinayak/
+/app/
+/components/
+/lib/
+/scripts/
+/siddhivinayak-jewellers/
+/karadkar-cabwala/
+/trata-digital/
+/trata-digital-source.zip
+/jsconfig.json
+/next.config.mjs
+/postcss.config.js
+/tailwind.config.js
+/package-lock.json
+/.env.example
 .env
 .env.local
 .env*.local
@@ -13,3 +27,5 @@ server/data/*.json
 .next-dev.err
 .next-dev.log
 npm-debug.log*
+
+.vercel

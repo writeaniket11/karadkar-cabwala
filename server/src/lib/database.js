@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import bcrypt from 'bcryptjs';
 
-const dbPath = process.env.DATABASE_PATH || './data/karad-cab.json';
+const dbPath = process.env.DATABASE_PATH || './data/harsh-tours.json';
 const resolvedDbPath = path.resolve(process.cwd(), dbPath);
 
 const initialData = {
@@ -37,7 +37,7 @@ function writeData(data) {
 
 export function initDatabase() {
   const data = readData();
-  const email = process.env.ADMIN_EMAIL || 'admin@karadcab.com';
+  const email = process.env.ADMIN_EMAIL || 'admin@harshtours.com';
   const password = process.env.ADMIN_PASSWORD || 'ChangeThisStrongPassword';
   const existing = data.admins.find((admin) => admin.email === email);
 

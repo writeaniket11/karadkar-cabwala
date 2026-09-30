@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { MessageCircle, Send } from 'lucide-react';
-import { createBooking } from '../api.js';
 import { whatsappUrl } from '../data/content.js';
 
 const initialForm = {
@@ -25,13 +24,20 @@ export default function BookingForm({ compact = false }) {
   async function submit(event) {
     event.preventDefault();
     setState({ loading: true, message: '', error: '' });
-    try {
-      await createBooking(form);
-      setForm(initialForm);
-      setState({ loading: false, message: 'Booking enquiry sent. We will call you shortly.', error: '' });
-    } catch (error) {
-      setState({ loading: false, message: '', error: error.message });
-    }
+    const text = [
+      'New cab booking enquiry',
+      `Name: ${form.name}`,
+      `Mobile: ${form.mobile}`,
+      `Pickup: ${form.pickup}`,
+      `Drop: ${form.dropLocation}`,
+      `Date: ${form.date}`,
+      `Time: ${form.time}`,
+      `Trip type: ${form.tripType}`,
+      form.message ? `Message: ${form.message}` : ''
+    ].filter(Boolean).join('\n');
+    window.open(`${whatsappUrl}?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
+    setForm(initialForm);
+    setState({ loading: false, message: 'WhatsApp enquiry opened. Please send the message to confirm booking.', error: '' });
   }
 
   return (

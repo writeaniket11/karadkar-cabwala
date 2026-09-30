@@ -14,9 +14,16 @@ import {
   Users
 } from 'lucide-react';
 
-export const phone = '+919270759955';
-export const displayPhone = '+91 92707 59955';
-export const whatsappUrl = 'https://wa.me/919270759955';
+export const businessName = 'Harsh Tours & Travels';
+export const legalBusinessName = 'HARSH TOURS & TRAVELS';
+export const businessNameMarathi = 'हर्ष टूर्स अँड ट्रॅव्हल्स';
+export const address = 'Shahu Stadium Complex, 2nd Floor, Gokhale College Road, Kolhapur';
+export const addressMarathi = 'शाहू स्टेडियम कॉम्प्लेक्स, 2 मजला, गोखले कॉलेज रोड, कोल्हापूर';
+export const phone = '+919766681372';
+export const secondaryPhone = '+919998219995';
+export const displayPhone = '+91 97666 81372';
+export const displaySecondaryPhone = '+91 99982 19995';
+export const whatsappUrl = 'https://wa.me/919766681372';
 
 export const navItems = [
   ['Home', '/'],
@@ -28,73 +35,74 @@ export const navItems = [
 ];
 
 export const services = [
-  { title: 'One Way Cabs', text: 'Book one-way pickup from Pune, Mumbai, Karad, Satara, Sangli and across Maharashtra.', icon: Route },
-  { title: 'Outstation Cab', text: 'Comfortable intercity travel across Maharashtra with Goa pickup and drop connections.', icon: CarTaxiFront },
-  { title: 'Airport Transfers', text: 'Timely pickup and drop for Pune, Mumbai and Goa airports.', icon: Plane },
-  { title: 'Local & Emergency Travel', text: 'Quick cab support for local or urgent travel, day or night.', icon: CalendarClock },
-  { title: 'Corporate Travel', text: 'Reliable cabs for office visits, guests, and business trips.', icon: BriefcaseBusiness },
-  { title: 'Pilgrimage Tours', text: 'Custom family pilgrimage cab tours to holy destinations across India.', icon: Landmark }
+  { title: 'One Way Cabs', text: 'Book one-way pickup from Kolhapur to Pune, Mumbai, Goa, Sangli, Satara and across Maharashtra.', icon: Route },
+  { title: 'Outstation Tours', text: 'Comfortable intercity and family travel with clean cars and polite drivers.', icon: CarTaxiFront },
+  { title: 'Airport Transfers', text: 'Timely pickup and drop for Pune, Mumbai, Goa and Kolhapur airport travel.', icon: Plane },
+  { title: 'Local & Emergency Travel', text: 'Quick cab support for local Kolhapur travel and urgent trips.', icon: CalendarClock },
+  { title: 'Corporate Travel', text: 'Reliable vehicles for office visits, guests, events and business trips.', icon: BriefcaseBusiness },
+  { title: 'Pilgrimage Tours', text: 'Custom family pilgrimage tours to holy destinations across Maharashtra and India.', icon: Landmark }
 ];
 
 export const routes = [
-  'Pune to Mumbai',
-  'Mumbai to Pune',
-  'Pune to Goa',
-  'Mumbai to Goa',
-  'Karad to Pune',
-  'Karad to Mumbai',
-  'Karad to Goa',
-  'Satara to Pune',
-  'Satara to Mumbai',
-  'Sangli to Pune',
-  'Sangli to Mumbai',
-  'Sangli to Goa'
+  'Kolhapur to Pune',
+  'Kolhapur to Mumbai',
+  'Kolhapur to Goa',
+  'Kolhapur to Sangli',
+  'Kolhapur to Satara',
+  'Kolhapur to Ratnagiri',
+  'Kolhapur to Chiplun',
+  'Kolhapur to Shirdi',
+  'Kolhapur to Pandharpur',
+  'Pune to Kolhapur',
+  'Mumbai to Kolhapur',
+  'Goa to Kolhapur'
 ];
 
 export const serviceAreas = [
-  { city: 'Pune', text: 'Local pickup, Pune Airport transfers and outstation cabs to Mumbai, Goa and cities across Maharashtra.' },
-  { city: 'Mumbai', text: 'Mumbai city and airport pickup for Pune, Goa, Satara, Karad, Sangli and long-distance travel.' },
-  { city: 'Karad', text: 'Local, one-way and round-trip cabs from our Karad base to destinations across Maharashtra and beyond.' },
-  { city: 'Satara', text: 'Doorstep cab pickup for Pune, Mumbai, Karad, Goa, airport transfers and family journeys.' },
-  { city: 'Sangli', text: 'One-way, round-trip and outstation cabs for Pune, Mumbai, Goa and Maharashtra routes.' },
-  { city: 'Goa', text: 'Pre-booked Maharashtra-Goa transfers, airport pickup and return trips for families and groups.' }
+  { city: 'Kolhapur', text: 'Local taxi, one-way cab, airport transfer and outstation tours from our Kolhapur office.' },
+  { city: 'Pune', text: 'Kolhapur-Pune cab bookings, Pune Airport transfers and return trips.' },
+  { city: 'Mumbai', text: 'Mumbai city and airport transfers for Kolhapur, Goa, Sangli and long-distance travel.' },
+  { city: 'Goa', text: 'Kolhapur-Goa transfers, airport pickup and family round trips.' },
+  { city: 'Sangli', text: 'Doorstep pickup for Kolhapur, Pune, Mumbai, Goa and Maharashtra routes.' },
+  { city: 'Satara', text: 'Reliable one-way and round-trip cab service for Pune, Mumbai and Kolhapur connections.' }
 ];
 
 export const pilgrimageDestinations = [
-  'Shirdi & Trimbakeshwar',
+  'Kolhapur Mahalaxmi',
+  'Jyotiba & Narsobawadi',
   'Pandharpur & Tuljapur',
-  'Kolhapur & Akkalkot',
+  'Shirdi & Trimbakeshwar',
+  'Akkalkot & Ganagapur',
   'Tirupati & Srisailam',
   'Ayodhya & Varanasi',
-  'Ujjain & Omkareshwar',
-  'Dwarka & Somnath',
-  'Rameswaram & Madurai'
+  'Ujjain & Omkareshwar'
 ];
 
 export const whyChoose = [
-  { title: 'Since 2018', icon: Clock3 },
+  { title: 'Local Kolhapur team', icon: MapPin },
   { title: '24/7 Available', icon: CalendarClock },
   { title: 'Affordable pricing', icon: BadgeIndianRupee },
   { title: 'Clean vehicles', icon: Sparkles },
   { title: 'Polite drivers', icon: HeartHandshake },
   { title: 'Safe journeys', icon: ShieldCheck },
-  { title: 'Local and outstation', icon: MapPin },
-  { title: 'Family friendly', icon: Users }
+  { title: 'Local and outstation', icon: Route },
+  { title: 'Family friendly', icon: Users },
+  { title: 'Trusted service', icon: Clock3 }
 ];
 
 export const testimonials = [
   {
-    name: 'Amit Jadhav',
-    text: 'Booked Karad to Pune one way. Clean car, fair rate, and driver came on time.'
+    name: 'Prasad Patil',
+    text: 'Booked Kolhapur to Pune one way. Clean car, fair price and smooth coordination.'
   },
   {
-    name: 'Sneha Patil',
-    text: 'Very helpful for airport drop. Easy WhatsApp booking and polite driver.'
+    name: 'Sneha Desai',
+    text: 'Helpful for airport drop. Easy WhatsApp booking and polite driver.'
   },
   {
-    name: 'Rahul Mane',
-    text: 'Good local taxi service in Karad. Affordable and available late night.'
+    name: 'Rahul Jadhav',
+    text: 'Good local taxi service in Kolhapur. Affordable and available on time.'
   }
 ];
 
-export const coverageLine = 'Pickup available from Pune, Mumbai, Karad, Satara, Sangli and locations across Maharashtra.';
+export const coverageLine = 'Pickup available from Kolhapur, Pune, Mumbai, Goa, Sangli, Satara and nearby Maharashtra locations.';

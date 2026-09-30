@@ -54,7 +54,7 @@ export default function AdminDashboard() {
 
   return (
     <main className="min-h-screen bg-mist">
-      <Seo title="Admin Dashboard | KARAD ONE WAY CAB" description="Booking admin dashboard." />
+      <Seo title="Admin Dashboard | Harsh Tours & Travels" description="Booking admin dashboard." />
       <header className="border-b border-slate-200 bg-white px-4 py-4">
         <div className="container-page flex flex-wrap items-center justify-between gap-3">
           <div>

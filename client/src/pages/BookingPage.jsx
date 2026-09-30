@@ -6,8 +6,8 @@ import Seo from '../components/Seo.jsx';
 export default function BookingPage() {
   return (
     <>
-      <Seo title="Book a Cab Across Maharashtra & Goa | Karadkar Cabwala" description="Book one-way, round-trip, airport, outstation or pilgrimage cabs from Pune, Mumbai, Karad, Satara, Sangli and across Maharashtra." />
-      <PageHero title="Book your cab in one minute" eyebrow="Booking">
+      <Seo title="Book Cab in Kolhapur | Harsh Tours & Travels" description="Book one-way, round-trip, airport, outstation or pilgrimage cab service from Kolhapur." />
+      <PageHero title="Book a cab or tour from Kolhapur" eyebrow="Booking">
         Enter any pickup and drop location. We will confirm availability, car, driver and fare.
       </PageHero>
       <section className="section bg-white">

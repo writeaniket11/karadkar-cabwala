@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { BadgeIndianRupee } from 'lucide-react';
-import { createFareEnquiry } from '../api.js';
+import { whatsappUrl } from '../data/content.js';
 
 const initialForm = { name: '', mobile: '', pickup: '', dropLocation: '', tripType: 'One Way' };
 
@@ -15,13 +15,17 @@ export default function FareForm() {
   async function submit(event) {
     event.preventDefault();
     setState({ loading: true, message: '', error: '' });
-    try {
-      await createFareEnquiry(form);
-      setForm(initialForm);
-      setState({ loading: false, message: 'Fare enquiry received. We will share the best price soon.', error: '' });
-    } catch (error) {
-      setState({ loading: false, message: '', error: error.message });
-    }
+    const text = [
+      'New fare enquiry',
+      `Name: ${form.name}`,
+      `Mobile: ${form.mobile}`,
+      `Pickup: ${form.pickup}`,
+      `Drop: ${form.dropLocation}`,
+      `Trip type: ${form.tripType}`
+    ].join('\n');
+    window.open(`${whatsappUrl}?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
+    setForm(initialForm);
+    setState({ loading: false, message: 'WhatsApp fare enquiry opened. Please send the message to get price.', error: '' });
   }
 
   return (

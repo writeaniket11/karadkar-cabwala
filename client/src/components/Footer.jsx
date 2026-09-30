@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { displayPhone, navItems, phone, whatsappUrl } from '../data/content.js';
+import { address, displayPhone, displaySecondaryPhone, legalBusinessName, navItems, phone, secondaryPhone, whatsappUrl } from '../data/content.js';
 import BrandLogo from './BrandLogo.jsx';
 
 export default function Footer() {
@@ -9,10 +9,11 @@ export default function Footer() {
         <div>
           <BrandLogo invert variant="mark" />
           <p className="mt-3 max-w-xl text-sm leading-6 text-white/70">
-            One-way, local, airport and outstation cab pickup across Maharashtra, Goa connections and pilgrimage tours across India since 2018.
+            Local taxi, one-way cab, airport transfer, outstation travel and family tours from Kolhapur.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             <a className="btn-primary" href={`tel:${phone}`}>Call {displayPhone}</a>
+            <a className="btn-secondary border-white/20 bg-white/10 text-white hover:bg-white hover:text-navy" href={`tel:${secondaryPhone}`}>{displaySecondaryPhone}</a>
             <a className="btn-secondary border-white/20 bg-white/10 text-white hover:bg-white hover:text-navy" href={whatsappUrl} target="_blank" rel="noreferrer">Book on WhatsApp</a>
           </div>
         </div>
@@ -27,13 +28,14 @@ export default function Footer() {
         <div>
           <h3 className="font-bold">Service Areas</h3>
           <p className="mt-3 text-sm leading-6 text-white/70">
-            Pune, Mumbai, Karad, Satara, Sangli, Kolhapur and locations across Maharashtra, with Goa connections.
+            Kolhapur, Pune, Mumbai, Goa, Sangli, Satara, Ratnagiri and nearby Maharashtra locations.
           </p>
+          <p className="mt-3 text-sm leading-6 text-white/70">{address}</p>
           <Link className="mt-3 inline-block text-sm font-bold text-taxi" to="/services#pilgrimage">Pilgrimage tours across India</Link>
         </div>
       </div>
       <div className="container-page mt-8 border-t border-white/10 pt-5 text-xs text-white/50">
-        (c) {new Date().getFullYear()} KARAD ONE WAY CAB TAXI RENTALS. All rights reserved.
+        (c) {new Date().getFullYear()} {legalBusinessName}. All rights reserved.
       </div>
     </footer>
   );

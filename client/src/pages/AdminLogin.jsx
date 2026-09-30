@@ -28,7 +28,7 @@ export default function AdminLogin() {
 
   return (
     <main className="grid min-h-screen place-items-center bg-mist px-4">
-      <Seo title="Admin Login | KARAD ONE WAY CAB" description="Admin login for booking dashboard." />
+      <Seo title="Admin Login | Harsh Tours & Travels" description="Admin login for booking dashboard." />
       <form onSubmit={submit} className="w-full max-w-md rounded-lg bg-white p-6 shadow-soft">
         <div className="mb-6 flex items-center gap-3">
           <BrandLogo showText={false} variant="mark" />

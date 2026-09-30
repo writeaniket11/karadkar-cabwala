@@ -7,8 +7,8 @@ import { routes, serviceAreas, whatsappUrl } from '../data/content.js';
 export default function RoutesPage() {
   return (
     <>
-      <Seo title="Cab Service in Pune, Mumbai, Karad, Satara, Sangli & Goa" description="Book one-way, round-trip, local and airport cabs from Pune, Mumbai, Karad, Satara, Sangli and across Maharashtra, with Goa connections." />
-      <PageHero title="Cab pickup across Maharashtra and Goa connections" eyebrow="Service Areas">
+      <Seo title="Kolhapur Cab Routes | Harsh Tours & Travels" description="Book Kolhapur to Pune, Mumbai, Goa, Sangli, Satara, Ratnagiri, Chiplun and pilgrimage cab routes." />
+      <PageHero title="Popular cab routes from Kolhapur" eyebrow="Service Areas">
         Doorstep pickup, fast fare enquiry and flexible one-way or round-trip travel.
       </PageHero>
       <section className="section bg-white">
@@ -16,7 +16,7 @@ export default function RoutesPage() {
           <div className="mb-8 max-w-3xl">
             <p className="text-sm font-black uppercase text-flame">Pickup Coverage</p>
             <h2 className="mt-2 text-3xl font-black text-navy">Cab service in major cities</h2>
-            <p className="mt-3 leading-7 text-slate-600">We coordinate pre-booked pickups throughout Maharashtra. Goa services are available for interstate transfers and return journeys.</p>
+            <p className="mt-3 leading-7 text-slate-600">We coordinate pre-booked pickups from Kolhapur and nearby Maharashtra cities. Goa services are available for interstate transfers and return journeys.</p>
           </div>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {serviceAreas.map(({ city, text }) => (

@@ -12,15 +12,15 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="Cab Service Across Maharashtra & Goa | Karadkar Cabwala"
-        description="Book reliable local, airport and outstation cabs from Pune, Mumbai, Karad, Satara, Sangli and across Maharashtra, with Goa travel and pilgrimage tours across India."
+        title="Harsh Tours & Travels | Cab Service in Kolhapur"
+        description="Book Harsh Tours & Travels for local taxi, one-way cab, airport transfer and outstation tours from Kolhapur across Maharashtra and Goa."
       />
       <section className="section overflow-hidden bg-white">
         <div className="container-page grid gap-10 lg:grid-cols-[1fr_0.9fr] lg:items-center">
           <div className="reveal">
-            <p className="inline-flex rounded-md bg-taxi/20 px-3 py-2 text-sm font-black text-navy">Since 2018 | 24/7 Cab Service</p>
-            <h1 className="mt-5 text-4xl font-black leading-tight text-navy sm:text-6xl">Reliable Cab Service Across Maharashtra & Goa</h1>
-            <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">Book clean cars and polite drivers for one-way, round-trip, airport and outstation travel, with pilgrimage tours across India.</p>
+            <p className="inline-flex rounded-md bg-taxi/20 px-3 py-2 text-sm font-black text-navy">Kolhapur Based | 24/7 Cab Service</p>
+            <h1 className="mt-5 text-4xl font-black leading-tight text-navy sm:text-6xl">Harsh Tours & Travels Cab Service in Kolhapur</h1>
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">Book clean cars and polite drivers for local travel, one-way trips, airport transfers, outstation tours and pilgrimage journeys.</p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <a className="btn-primary" href={`tel:${phone}`}><Phone size={18} /> Call Now</a>
               <a className="btn-secondary" href={whatsappUrl} target="_blank" rel="noreferrer"><MessageCircle size={18} /> Book on WhatsApp</a>
@@ -37,7 +37,7 @@ export default function Home() {
             <div className="rounded-lg bg-white p-6">
               <div className="flex items-center justify-between gap-4">
                 <div>
-                  <p className="text-sm font-black uppercase text-flame">Maharashtra Cab</p>
+                  <p className="text-sm font-black uppercase text-flame">Kolhapur Cab</p>
                   <h2 className="mt-2 text-2xl font-black text-navy">Fast booking, fair price</h2>
                 </div>
                 <div className="hidden sm:block">
@@ -47,7 +47,7 @@ export default function Home() {
               <div className="mt-8 rounded-lg border-2 border-dashed border-slate-200 bg-white p-5">
                 <div className="h-20 rounded-t-full bg-taxi" />
                 <div className="mx-auto -mt-7 grid h-20 w-52 place-items-center rounded-lg bg-navy text-white shadow-soft">
-                  <span className="text-lg font-black">CAB READY</span>
+                  <span className="text-lg font-black">TRIP READY</span>
                 </div>
                 <div className="mt-5 grid grid-cols-2 gap-3">
                   <div className="rounded-md bg-mist p-3 text-center">
@@ -55,8 +55,8 @@ export default function Home() {
                     <p className="text-xs font-semibold text-slate-500">Available</p>
                   </div>
                   <div className="rounded-md bg-mist p-3 text-center">
-                    <p className="text-xl font-black text-navy">2018</p>
-                    <p className="text-xs font-semibold text-slate-500">Trusted Since</p>
+                    <p className="text-xl font-black text-navy">2</p>
+                    <p className="text-xs font-semibold text-slate-500">Contact Numbers</p>
                   </div>
                 </div>
               </div>
@@ -89,7 +89,7 @@ export default function Home() {
         <div className="container-page grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div>
             <p className="text-sm font-black uppercase text-flame">Popular Routes</p>
-            <h2 className="mt-2 text-3xl font-black text-navy">Popular intercity cab routes</h2>
+            <h2 className="mt-2 text-3xl font-black text-navy">Popular Kolhapur cab routes</h2>
             <p className="mt-3 text-slate-600">Ask fare on call or WhatsApp. One way and round trip options are available.</p>
             <Link className="btn-primary mt-6" to="/routes">View Routes</Link>
           </div>
@@ -107,8 +107,8 @@ export default function Home() {
         <div className="container-page grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
           <div>
             <p className="text-sm font-black uppercase text-flame">Pilgrimage Tours</p>
-            <h2 className="mt-2 text-3xl font-black text-navy">Pilgrimage cab tours across India</h2>
-            <p className="mt-3 leading-7 text-slate-600">Plan a comfortable family journey with flexible pickup, multi-day travel and a custom itinerary for sacred destinations across India.</p>
+            <h2 className="mt-2 text-3xl font-black text-navy">Pilgrimage and family tours</h2>
+            <p className="mt-3 leading-7 text-slate-600">Plan a comfortable family journey from Kolhapur with flexible pickup, multi-day travel and a custom itinerary for sacred destinations.</p>
             <Link className="btn-primary mt-6" to="/services#pilgrimage">Explore Pilgrimage Tours</Link>
           </div>
           <div className="grid gap-3 sm:grid-cols-2">

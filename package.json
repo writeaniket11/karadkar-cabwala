@@ -1,15 +1,13 @@
 {
-  "name": "karad-one-way-cab-taxi-rentals",
+  "name": "harsh-tours-travels",
   "version": "1.0.0",
   "private": true,
-  "description": "Full-stack website for KARAD ONE WAY CAB TAXI RENTALS.",
+  "description": "Lead-focused website for Harsh Tours & Travels, Kolhapur.",
   "scripts": {
-    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
-    "client:dev": "npm --prefix client run dev",
-    "server:dev": "npm --prefix server run dev",
-    "install:all": "npm install && npm --prefix client install && npm --prefix server install",
+    "dev": "npm --prefix client run dev",
     "build": "npm --prefix client run build",
-    "start": "npm --prefix server start"
+    "start": "npm --prefix client run preview",
+    "install:all": "npm install && npm --prefix client install"
   },
   "devDependencies": {
     "concurrently": "^9.1.0"

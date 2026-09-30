@@ -1,55 +1,31 @@
-# KARAD ONE WAY CAB TAXI RENTALS
+# Harsh Tours & Travels
 
-Modern full-stack website for a Karad-based one way cab and taxi rental service.
+Lead-focused website for **Harsh Tours & Travels**, Kolhapur.
 
-## Features
+## Contact
 
-- React + Tailwind CSS responsive frontend
-- Express API backend
-- File-based JSON booking/enquiry database
-- Booking and fare enquiry forms
-- WhatsApp and call CTA integration for `+91 92707 59955`
-- Admin login and dashboard
-- Booking statuses: New, Contacted, Confirmed, Cancelled
-- SEO metadata, local business schema, route-focused content
-- Mobile floating call and WhatsApp buttons
+- Phone / WhatsApp: `+91 97666 81372`
+- Alternate number: `+91 99982 19995`
+- Address: Shahu Stadium Complex, 2nd Floor, Gokhale College Road, Kolhapur
 
-## Local Setup
+## Local Run
 
 ```bash
 npm run install:all
-cp server/.env.example server/.env
 npm run dev
 ```
 
-Frontend: `http://localhost:5173`
-Backend API: `http://localhost:5000`
+Open `http://localhost:5173`.
 
-## Default Admin Login
+## Vercel Deployment
 
-Set these in `server/.env` before production use:
+Use these settings on Vercel:
 
-```env
-ADMIN_EMAIL=admin@karadcab.com
-ADMIN_PASSWORD=ChangeThisStrongPassword
-JWT_SECRET=replace-with-a-long-random-secret
+```text
+Framework Preset: Vite
+Build Command: npm run build
+Output Directory: client/dist
+Install Command: npm run install:all
 ```
 
-The first server start creates the admin user if it does not exist.
-
-## Production Build
-
-```bash
-npm run install:all
-npm run build
-npm start
-```
-
-The Express server serves the built frontend from `client/dist`.
-
-## Deployment Notes
-
-1. Deploy to a Node.js host such as Render, Railway, VPS, or cPanel Node app.
-2. Set environment variables from `server/.env.example`.
-3. Use persistent disk storage for `server/data/karad-cab.json`.
-4. Point the domain DNS to your host after client approval.
+The booking and fare forms open WhatsApp with pre-filled enquiry details, which works on static Vercel hosting.
