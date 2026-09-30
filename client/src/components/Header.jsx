@@ -9,12 +9,12 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-slate-100 bg-white/95 backdrop-blur">
-      <div className="container-page flex h-20 items-center justify-between px-4 sm:px-6 lg:h-20 lg:px-8">
-        <Link to="/" className="min-w-0" onClick={() => setOpen(false)}>
+      <div className="container-page flex h-20 items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
+        <Link to="/" className="min-w-0 shrink-0" onClick={() => setOpen(false)} aria-label="Harsh Tours & Travels home">
           <BrandLogo />
         </Link>
 
-        <nav className="hidden items-center gap-1 lg:flex">
+        <nav className="hidden items-center gap-1 xl:flex">
           {navItems.map(([label, href]) => (
             <NavLink
               key={href}
@@ -41,16 +41,18 @@ export default function Header() {
 
         <button
           type="button"
-          className="grid h-10 w-10 place-items-center rounded-md border border-slate-200 text-navy lg:hidden"
+          className="grid h-11 w-11 shrink-0 place-items-center rounded-md border border-slate-200 text-navy xl:hidden"
           onClick={() => setOpen((value) => !value)}
           aria-label="Toggle menu"
+          aria-expanded={open}
+          aria-controls="mobile-navigation"
         >
           {open ? <X /> : <Menu />}
         </button>
       </div>
 
       {open && (
-        <div className="border-t border-slate-100 bg-white px-4 pb-4 lg:hidden">
+        <div id="mobile-navigation" className="border-t border-slate-100 bg-white px-4 pb-4 xl:hidden">
           <nav className="container-page grid gap-1 py-3">
             {navItems.map(([label, href]) => (
               <NavLink

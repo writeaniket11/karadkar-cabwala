@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="bg-navy px-4 py-10 text-white sm:px-6 lg:px-8">
       <div className="container-page grid gap-8 md:grid-cols-[1.2fr_0.8fr_0.8fr]">
         <div>
-          <BrandLogo invert variant="mark" />
+          <BrandLogo showText={false} variant="full" />
           <p className="mt-3 max-w-xl text-sm leading-6 text-white/70">
             Local taxi, one-way cab, airport transfer, outstation travel and family tours from Kolhapur.
           </p>
